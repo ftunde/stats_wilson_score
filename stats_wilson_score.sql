@@ -57,14 +57,3 @@ begin
 end;
 /
 grant execute on stats_wilson_score to public;
-
--- EXAMPLE:
-
-
-
-  
-  
-  
-  
-  
-  
