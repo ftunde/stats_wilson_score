@@ -1,0 +1,12 @@
+Author      : Matthew Grogan
+Website     : https://github.com/mattgrogan
+Name        : stats_wilson_score.sql 
+Description : Oracle PL/SQL function to return the Wilson Score Interval for the given proportion. 
+Citation    : Wilson E.B. J Am Stat Assoc 1927, 22, 209-212
+
+Example:
+  select 
+    round(29 / 250, 4) point_estimate, 
+    stats_wilson_score(29, 250, 0.10, 'LCL') lcl, 
+    stats_wilson_score(29, 250, 0.10, 'UCL') ucl
+  from dual;
